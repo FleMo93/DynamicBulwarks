@@ -40,4 +40,7 @@ switch (_type) do {
     case ("telePlode"): {
     [_player] call supports_fnc_telePlode;
     };
+    case ("ammoDrop"): {
+        [_player, _target] call supports_fnc_ammoDrop;
+    };
 };

@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=186;
+		nextID=189;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={-3.0339575,24.28578,21.95533};
-		dir[]={0.012008007,-0.54482526,-0.83846366};
-		up[]={0.0078018815,0.83854961,-0.54476935};
-		aside[]={-0.99989748,4.6566129e-010,-0.014319971};
+		pos[]={0,29.220001,-25};
+		dir[]={-1.2363449e-007,-0.70710683,0.70710683};
+		up[]={-1.2363449e-007,0.70710683,0.70710683};
+		aside[]={1.0000001,0,1.7484558e-007};
 	};
 };
 binarizationWanted=0;
@@ -27,6 +27,7 @@ addons[]=
 {
 	"A3_Characters_F",
 	"A3_Weapons_F_Pistols_P07",
+	"jsrs_soundmod_weapons",
 	"A3_Weapons_F",
 	"A3_Weapons_F_Items",
 	"A3_Characters_F_Exp_Civil",
@@ -39,7 +40,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=6;
+		items=7;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -56,26 +57,32 @@ class AddonsMetaData
 		};
 		class Item2
 		{
+			className="jsrs_soundmod_weapons";
+			name="jsrs_soundmod_weapons";
+			author="lordjarhead";
+		};
+		class Item3
+		{
 			className="A3_Characters_F_Exp";
 			name="Arma 3 Apex - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item3
+		class Item4
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item4
+		class Item5
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item5
+		class Item6
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
@@ -356,13 +363,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-5.5642767,4.2270803,2.1952353};
+						position[]={-5.5640001,4.2271624,2.1949999};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
-						description="Marksman";
+						description="Survivor";
 						isPlayable=1;
 						class Inventory
 						{
@@ -377,6 +384,7 @@ class Mission
 					};
 					id=60;
 					type="C_Man_casual_3_F";
+					atlOffset=8.2015991e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -835,7 +843,7 @@ class Mission
 					};
 					id=167;
 					type="C_man_polo_1_F";
-					atlOffset=190.19565;
+					atlOffset=100.68614;
 				};
 				class Item19
 				{
@@ -853,7 +861,7 @@ class Mission
 					};
 					id=165;
 					type="C_Man_casual_6_F";
-					atlOffset=190.19563;
+					atlOffset=100.71925;
 				};
 				class Item20
 				{
@@ -871,7 +879,7 @@ class Mission
 					};
 					id=169;
 					type="C_Man_casual_1_F";
-					atlOffset=190.19563;
+					atlOffset=100.6825;
 				};
 				class Item21
 				{
@@ -907,7 +915,7 @@ class Mission
 					};
 					id=175;
 					type="C_man_sport_2_F";
-					atlOffset=190.19563;
+					atlOffset=100.70146;
 				};
 				class Item23
 				{
@@ -925,7 +933,7 @@ class Mission
 					};
 					id=177;
 					type="C_man_sport_3_F";
-					atlOffset=190.19563;
+					atlOffset=100.68772;
 				};
 				class Item24
 				{
@@ -984,7 +992,7 @@ class Mission
 			a=150;
 			b=150;
 			id=84;
-			atlOffset=0.00048446655;
+			atlOffset=96.571228;
 		};
 		class Item2
 		{
@@ -996,7 +1004,7 @@ class Mission
 			a=150;
 			b=150;
 			id=85;
-			atlOffset=-0.61751747;
+			atlOffset=95.998055;
 		};
 		class Item3
 		{
@@ -1008,6 +1016,7 @@ class Mission
 			a=150;
 			b=150;
 			id=86;
+			atlOffset=110.22154;
 		};
 		class Item4
 		{
@@ -1019,7 +1028,7 @@ class Mission
 			a=150;
 			b=150;
 			id=88;
-			atlOffset=-0.709692;
+			atlOffset=123.36593;
 		};
 		class Item5
 		{
@@ -1031,6 +1040,7 @@ class Mission
 			a=150;
 			b=150;
 			id=93;
+			atlOffset=106.06324;
 		};
 		class Item6
 		{
@@ -1042,6 +1052,7 @@ class Mission
 			a=150;
 			b=150;
 			id=100;
+			atlOffset=161.35703;
 		};
 		class Item7
 		{
@@ -1053,7 +1064,7 @@ class Mission
 			a=150;
 			b=150;
 			id=101;
-			atlOffset=-0.69843292;
+			atlOffset=93.349274;
 		};
 		class Item8
 		{
@@ -1065,6 +1076,7 @@ class Mission
 			a=150;
 			b=150;
 			id=102;
+			atlOffset=116.33896;
 		};
 		class Item9
 		{
@@ -1076,6 +1088,7 @@ class Mission
 			a=150;
 			b=150;
 			id=103;
+			atlOffset=104.74167;
 		};
 		class Item10
 		{
@@ -1087,7 +1100,6 @@ class Mission
 			name="mainZeus";
 			id=116;
 			type="ModuleCurator_F";
-			atlOffset=189.10609;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1177,7 +1189,7 @@ class Mission
 			text="Specific Bulwark Pos";
 			type="Select";
 			id=182;
-			atlOffset=24.178188;
+			atlOffset=152.51059;
 		};
 		class Item12
 		{
@@ -1194,7 +1206,7 @@ class Mission
 			};
 			id=123;
 			type="Land_Pier_Box_F";
-			atlOffset=190.19;
+			atlOffset=100.72;
 			class CustomAttributes
 			{
 				class Attribute0
